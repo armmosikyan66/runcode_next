@@ -1,0 +1,41 @@
+@import "reset";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+@import "./components/tooltip";
+@import "./components/editor";
+@import "./components/toggleButton";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  height: calc(100vh - 84px);
+}
+
+.codeblock {
+  height: calc(100% - 64px);
+}

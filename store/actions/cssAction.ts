@@ -1,0 +1,1 @@
+export const setCss = (payload?: string | any) => ({type: "SET_CSS", payload});

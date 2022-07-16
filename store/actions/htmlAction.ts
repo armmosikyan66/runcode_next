@@ -1,0 +1,1 @@
+export const setHtml = (payload?: string | any) => ({type: "SET_HTML", payload});

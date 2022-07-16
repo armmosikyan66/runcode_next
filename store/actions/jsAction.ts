@@ -1,0 +1,1 @@
+export const setJs = (payload?: string | any) => ({type: "SET_JS", payload});

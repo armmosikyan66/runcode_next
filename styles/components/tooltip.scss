@@ -1,0 +1,80 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "Edit Filename";
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #333;
+    color: rgba(#fff, 0.7);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%, 40%) scale(0);
+  }
+
+  &.file {
+    &:after {
+      content: "Edit Filename";
+    }
+  }
+
+  &.github {
+    &:after {
+      content: "Give me a star";
+    }
+  }
+
+  &.fork {
+    &:after {
+      content: "Clone this code";
+    }
+  }
+
+  &.newPage {
+    &:after {
+      content: "Open page in new window";
+    }
+  }
+
+  &:hover {
+    &::after {
+      transform: translate(-50%, 100%) scale(1);
+    }
+  }
+
+  &.checkbox {
+    &:after {
+      content: "Run code in every change";
+    }
+
+    &:hover {
+      &::after {
+        transform: translate(-65%, 100%) scale(1);
+      }
+    }
+  }
+
+  &.close {
+    &:after {
+      content: "Go back";
+    }
+
+    &:hover {
+      &::after {
+        transform: translate(-65%, 100%) scale(1);
+      }
+    }
+  }
+}

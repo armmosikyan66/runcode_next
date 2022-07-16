@@ -1,0 +1,30 @@
+.knobs {
+  background-color: #c5cbd4;
+  width: 37px;
+  height: 20px;
+  border-radius: 30px;
+  position: relative;
+  transition: background-color 0.2s linear;
+
+  span {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    z-index: 12;
+    transition: transform 0.2s linear;
+  }
+}
+
+input.checkbox[type=checkbox]:checked + .knobs {
+  background-color: #2684fe;
+
+  span {
+    right: 0;
+    transform: translate(20px, -50%);
+  }
+}
