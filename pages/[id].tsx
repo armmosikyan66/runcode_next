@@ -42,8 +42,7 @@ const NewWindow: NextPage = () => {
 
     return (
         <>
-            <div className="h-full w-full">
-
+            <div className="h-screen w-full">
                 <header className="w-full border bg-gray-100 border-gray-100 border-solid">
                     <div className="p-5">
                         <div className="flex items-center justify-between">
